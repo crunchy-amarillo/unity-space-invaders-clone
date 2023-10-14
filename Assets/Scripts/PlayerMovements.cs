@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerMovements : MonoBehaviour
 {
     public float speed = 10f;
+
     private Rigidbody2D playerRigidbody;
     private Animator playerAnimator;
 

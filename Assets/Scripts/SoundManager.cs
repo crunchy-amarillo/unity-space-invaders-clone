@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
+    [Header("Sounds")]
     public AudioClip playerBulletSound;
 
     private AudioSource audioSource;
