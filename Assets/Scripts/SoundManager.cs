@@ -3,7 +3,7 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     [Header("Sounds")]
-    public AudioClip playerBulletSound;
+    public AudioClip enemyDestroySound;
 
     private AudioSource audioSource;
 
@@ -12,8 +12,8 @@ public class SoundManager : MonoBehaviour
         this.audioSource = GetComponent<AudioSource>();
     }
 
-    public void PlayPlayerBulletSound()
+    public void PlayEnemyDestroySound()
     {
-        this.audioSource.PlayOneShot(this.playerBulletSound);
+        this.audioSource.PlayOneShot(this.enemyDestroySound);
     }
 }
