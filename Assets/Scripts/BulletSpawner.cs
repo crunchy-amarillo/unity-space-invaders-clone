@@ -29,7 +29,7 @@ public class BulletSpawner : MonoBehaviour
 
         this.spawnElapsedTime += Time.deltaTime;
 
-        if (Input.GetKey(this.spawnKeyCode) && this.spawnElapsedTime >= this.spawnInterval)
+        if ((Input.GetKey(this.spawnKeyCode) || Input.touchCount > 0) && this.spawnElapsedTime >= this.spawnInterval)
         {
             this.spawnElapsedTime = 0f;
             SpawnBullet();
