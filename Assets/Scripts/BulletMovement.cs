@@ -14,7 +14,15 @@ public class BulletMovement : MonoBehaviour
 
         if (movementType.Equals(BulletMovementType.TO_PLAYER))
         {
+            MoveToPlayer();
+        }
+    }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Wall" && collision.transform.name == "BottomWall")
+        {
+            Destroy(gameObject);
         }
     }
 

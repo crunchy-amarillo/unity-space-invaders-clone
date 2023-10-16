@@ -22,7 +22,6 @@ public class EnemySpawner : MonoBehaviour
         {
             int randomEnemySelector = Random.Range(0, enemies.Length);
             GameObject currentEnemy = enemies[randomEnemySelector];
-            Debug.Log(currentEnemy);
             Instantiate(currentEnemy, transform.position, Quaternion.identity);
         }
     }

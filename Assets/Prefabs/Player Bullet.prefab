@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 421574778702468193}
   - component: {fileID: 8093448176594184105}
   - component: {fileID: -6649437002133090919}
-  - component: {fileID: 4798119255424393464}
+  - component: {fileID: 8071498154772982517}
   m_Layer: 0
   m_Name: Player Bullet
   m_TagString: Bullet
@@ -272,7 +272,7 @@ MonoBehaviour:
   movementType: 0
   velocity: {x: 0, y: 4}
   speed: 1
---- !u!114 &4798119255424393464
+--- !u!114 &8071498154772982517
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
